@@ -3,9 +3,25 @@
 <head>
   <meta charset="utf-8">
   <title>Electron Boilerplate</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
+	<nav id="navMenu">
+		<button id="newProject">Create new project</button>
+	</nav>
+	<main id="projectList">
+			<h2>Choose project</h2>
+	</main>
 
+		<!-- modal box for new project creation -->
+		<div id="createNewProject" class="createNewProject">
+			<form>
+				<input type="name" name="" id="projectName" placeholder="Project Name" >
+				<input type="file" name="img" id="projectListItemIcon" accept="image/*" required>
+			</form>	
+			<button id="creationButton">Create</button>
+			<button id="newProjectModalClose">Close</button>
+		</div>
 
   <script src="app.js"></script>
 </body>

@@ -1,24 +1,119 @@
-html,
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   width: 100%;
   height: 100%;
-  margin: 0;
-  padding: 0;
 }
 
-body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-family: sans-serif;
-  color: #525252;
+#navMenu {
+  display: block;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: blue;
+  padding: 0.5em;
+}
+#navMenu button {
+  border: none;
+  border-radius: 0.2em;
+  outline: none;
+  padding: 0.3em;
 }
 
-a {
-  text-decoration: none;
-  color: #cb3837;
+#projectListItem {
+  cursor: pointer;
 }
 
-.container {
+#projectList {
+  width: 90%;
+  margin-top: 5vh;
+  margin-left: 5vw;
+  background-color: black;
+  display: inline-grid;
+  grid-template-columns: auto auto auto auto;
+  grid-template-rows: auto auto auto auto;
+  padding: 1em;
   text-align: center;
 }
+#projectList h2 {
+  position: absolute;
+  color: white;
+  left: 38%;
+  top: 13%;
+  font-size: 1.5em;
+}
+#projectList a {
+  color: white;
+  text-decoration: none;
+  background-color: red;
+  margin: 1em;
+  margin-top: 10vh;
+  text-align: center;
+  height: 20vh;
+  width: 10vw;
+}
+#projectList a img {
+  display: block;
+  margin-left: 2.5vw;
+  margin-top: 1vh;
+}
+
+.createNewProject {
+  position: absolute;
+  display: none;
+  padding: 1em;
+  background-color: red;
+  top: 40vh;
+  width: 30vw;
+  height: auto;
+  text-align: left;
+  margin-left: 35vw;
+}
+.createNewProject input {
+  margin: 0.5em;
+  padding: 0.2em;
+  font-size: 0.8em;
+  color: #333;
+  border: 1px solid black;
+  border-radius: 0.2em;
+}
+.createNewProject button {
+  border: none;
+  outline: none;
+  padding: 0.2em;
+  margin-top: 1vh;
+  margin-left: 1vw;
+}
+
+.toMainMenu {
+  color: white;
+  display: block;
+  text-decoration: none;
+  margin: 1em;
+}
+
+#projectCategoryList {
+  height: 85vh;
+  width: 30vw;
+  margin-left: 35vw;
+  margin-top: 5vh;
+  background-color: #888;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  padding: 1em;
+}
+
+#projectCategoryIcon {
+  cursor: pointer;
+  margin-left: 15%;
+  width: 70%;
+  border-radius: 0.3em;
+  padding: 0.5em;
+  background-color: red;
+}
+
+/*# sourceMappingURL=main.css.map */
